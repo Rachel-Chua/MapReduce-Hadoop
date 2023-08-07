@@ -8,7 +8,7 @@ To put the dataset on the HDFS: ```hadoop fs -put recipes.csv```
 
 For each approach, the ```time``` command was used to measure the execution time.
 
-* Baseline: ```time python3 count.py```  
+* Baseline Conventional: ```time python3 count.py```  
   Results: ```cat ingredient_count_results.csv | less```
   
 * Local MapReduce: ```time cat recipes.csv | python3 mapper.py | sort - | python3 reducer.py -> ingredientcount.csv```    
